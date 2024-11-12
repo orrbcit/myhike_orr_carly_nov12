@@ -241,7 +241,7 @@ function updateBookmark(hikeDocID) {
             })
         } else{
             currentUser.set({
-                bookmarks: firebaseConfig.firestore.FieldValue.arrayUnion(hikeDocID),
+                bookmarks: firebase.firestore.FieldValue.arrayUnion(hikeDocID),
             },
             {
                 merge: true
